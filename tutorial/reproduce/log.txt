@@ -1,0 +1,193 @@
+# ==============================
+# 2024-09-29 19:38:54 from shinyoungyi
+# ==============================
+# [ReproduceSY24] mode='simple'
+# Data directory: reproduce\output_simple
+# Figure directory: reproduce\figure_simple
+# Log: reproduce\log.txt
+
+* Read a polarized environment map: 0.0271 sec
+* Read a SHVec with high level for Figure 16: 0.0020 sec
+==================== [ReproduceSY24.figure_5] ====================
+* [Done] Save a figure reproduce\figure_simple\Figure 5.png
+
+==================== [ReproduceSY24.figure_7] ====================
+* [Done] Save a figure reproduce\figure_simple\Figure 7(a).png
+
+* [Done] Save a figure reproduce\figure_simple\Figure 7(b, c).png
+
+==================== [ReproduceSY24.get_rotmat] ====================
+==================== [ReproduceSY24.figure_10] ====================
+* [Done] Save a figure reproduce\figure_simple\Figure 10.png
+
+==================== [ReproduceSY24.get_rotmat] ====================
+==================== [ReproduceSY24.figure_11] ====================
+* [Done] Save a figure reproduce\figure_simple\Figure 11.png
+
+==================== [ReproduceSY24.get_visibility] ====================
+# self.vis_mask.shape = (6, 64, 64)
+# self.vis_TPmat.coeff.shape = (25, 25, 3, 3)
+==================== [ReproduceSY24.figure_13] ====================
+* [Done] Save a figure reproduce\figure_simple\Figure 13.png
+
+* [Done] Save a figure reproduce\figure_simple\Figure 13 (alternative).png
+
+==================== [ReproduceSY24.figure_16] ====================
+# === The first method: convolution in angular domain ===
+* [Report] Reconstruct PSH coefficient of the original envmap to the angular domain:
+           0.857211 sec
+* [Report] Perform convolution in the angular domain:
+           17.467042 sec
+# === The second method: convolution in frequency (PSH) domain ===
+* [Report] Perform convolution in the frequency domain:
+           0.003507 sec
+* [Report] Reconstruct convolved PSH coefficient to the angular domain:
+           0.947988 sec
+* [Done] Save a figure reproduce\figure_simple\Figure 16.png
+
+==================== [ReproduceSY24.figure_17] ====================
+* [Done] Save a figure reproduce\figure_simple\Figure 17.png
+
+========== All session is done in 25.0096 sec. ==========
+# ==============================
+# 2024-09-29 19:39:44 from shinyoungyi
+# ==============================
+# [ReproduceSY24] mode='simple'
+# Data directory: reproduce\output_simple
+# Figure directory: reproduce\figure_simple
+# Log: reproduce\log.txt
+
+# Removing cached data...
+# 40 cached data files have been removed!
+
+* Read a polarized environment map: 0.0261 sec
+* Read a SHVec with high level for Figure 16: 0.0020 sec
+==================== [ReproduceSY24.figure_5] ====================
+* Compute equirectangular Stokes images
+* [Done] equirectangular Stokes images: 1.4294 sec
+* [Done] Save a figure reproduce\figure_simple\Figure 5.png
+
+==================== [ReproduceSY24.figure_7] ====================
+* Compute PSH coefficient vector
+* [Done] PSH coefficient vector: 0.2647 sec
+* Compute nvSH coefficient vector
+* [Done] nvSH coefficient vector: 0.1264 sec
+* [Done] Save a figure reproduce\figure_simple\Figure 7(a).png
+
+* Compute Persp image from coefficients
+* [Done] Persp image from coefficients: 0.0086 sec
+* Compute Persp image from coefficients
+* [Done] Persp image from coefficients: 0.0040 sec
+* Compute Persp image from coefficients
+* [Done] Persp image from coefficients: 0.0070 sec
+* Compute Persp image from coefficients
+* [Done] Persp image from coefficients: 0.0045 sec
+* [Done] Save a figure reproduce\figure_simple\Figure 7(b, c).png
+
+==================== [ReproduceSY24.get_rotmat] ====================
+* Compute RotMat L5 on Cube64
+* [Done] RotMat L5 on Cube64: 1.1662 sec
+* Compute RotMat L5 on Cube64
+* [Done] RotMat L5 on Cube64: 0.6886 sec
+* Compute nvRotMat L5 on Cube64
+* [Done] nvRotMat L5 on Cube64: 11.5204 sec
+* Compute nvRotMat L5 on Cube64
+* [Done] nvRotMat L5 on Cube64: 11.1348 sec
+==================== [ReproduceSY24.figure_10] ====================
+* [Done] Save a figure reproduce\figure_simple\Figure 10.png
+
+==================== [ReproduceSY24.get_rotmat] ====================
+==================== [ReproduceSY24.figure_11] ====================
+* Compute Reconstruct SHVec to equirect image
+* [Done] Reconstruct SHVec to equirect image: 0.0708 sec
+* Compute Reconstruct nvSHVec to equirect image
+* [Done] Reconstruct nvSHVec to equirect image: 0.0337 sec
+* [Done] Save a figure reproduce\figure_simple\Figure 11.png
+
+==================== [ReproduceSY24.get_visibility] ====================
+* Compute Visibility mask
+mi.__version__ = '3.5.2', mi.variant() = 'cuda_ad_rgb'
+* [Done] Visibility mask: 0.6218 sec
+# self.vis_mask.shape = (6, 64, 64)
+* Compute Visibility SH coefficients
+* [Done] Visibility SH coefficients: 0.1901 sec
+* Compute Visibility TP matrix
+* [Done] Visibility TP matrix: 7.1575 sec
+# self.vis_TPmat.coeff.shape = (25, 25, 3, 3)
+==================== [ReproduceSY24.figure_13] ====================
+* [Done] Save a figure reproduce\figure_simple\Figure 13.png
+
+* [Done] Save a figure reproduce\figure_simple\Figure 13 (alternative).png
+
+==================== [ReproduceSY24.figure_16] ====================
+* Compute PSH convolution coefficient
+* [Done] PSH convolution coefficient: 12.6789 sec
+# === The first method: convolution in angular domain ===
+* [Report] Reconstruct PSH coefficient of the original envmap to the angular domain:
+           0.946674 sec
+* [Report] Perform convolution in the angular domain:
+           29.313617 sec
+# === The second method: convolution in frequency (PSH) domain ===
+* [Report] Perform convolution in the frequency domain:
+           0.008286 sec
+* [Report] Reconstruct convolved PSH coefficient to the angular domain:
+           1.922074 sec
+* [Done] Save a figure reproduce\figure_simple\Figure 16.png
+
+==================== [ReproduceSY24.figure_17] ====================
+* Compute Average pBRDF over surface normals
+* [Done] Average pBRDF over surface normals: 20.4340 sec
+* [Done] Save a figure reproduce\figure_simple\Figure 17.png
+
+========== All session is done in 107.2429 sec. ==========
+# ==============================
+# 2024-09-29 19:43:08 from shinyoungyi
+# ==============================
+# [ReproduceSY24] mode='full'
+# Data directory: reproduce\output
+# Figure directory: reproduce\figure
+# Log: reproduce\log.txt
+
+* Read a polarized environment map: 9.2436 sec
+* Read a SHVec with high level for Figure 16: 0.0030 sec
+==================== [ReproduceSY24.figure_5] ====================
+* [Done] Save a figure reproduce\figure\Figure 5.png
+
+==================== [ReproduceSY24.figure_7] ====================
+* [Done] Save a figure reproduce\figure\Figure 7(a).png
+
+* [Done] Save a figure reproduce\figure\Figure 7(b, c).png
+
+==================== [ReproduceSY24.get_rotmat] ====================
+==================== [ReproduceSY24.figure_10] ====================
+* [Done] Save a figure reproduce\figure\Figure 10.png
+
+==================== [ReproduceSY24.get_rotmat] ====================
+==================== [ReproduceSY24.figure_11] ====================
+* [Done] Save a figure reproduce\figure\Figure 11.png
+
+==================== [ReproduceSY24.get_visibility] ====================
+# self.vis_mask.shape = (6, 256, 256)
+# self.vis_TPmat.coeff.shape = (25, 25, 3, 3)
+==================== [ReproduceSY24.figure_13] ====================
+* [Done] Save a figure reproduce\figure\Figure 13.png
+
+* [Done] Save a figure reproduce\figure\Figure 13 (alternative).png
+
+==================== [ReproduceSY24.figure_16] ====================
+# === The first method: convolution in angular domain ===
+* [Report] Reconstruct PSH coefficient of the original envmap to the angular domain:
+           20.850759 sec
+* [Report] Perform convolution in the angular domain:
+           253.466075 sec
+# === The second method: convolution in frequency (PSH) domain ===
+* [Report] Perform convolution in the frequency domain:
+           0.010507 sec
+* [Report] Reconstruct convolved PSH coefficient to the angular domain:
+           22.116633 sec
+* [Done] Save a figure reproduce\figure\Figure 16.png
+
+==================== [ReproduceSY24.figure_17] ====================
+* [Done] Save a figure reproduce\figure\Figure 17.png
+
+========== All session is done in 397.7644 sec. ==========

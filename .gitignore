@@ -1,0 +1,13 @@
+polarsh/polarsh.egg-info/*
+
+**/__pycache__
+
+**/.vscode
+**/.vs
+
+**/temp.py
+**/temp.ply
+**/temp.ipynb
+
+*.ini
+polarsh/build/
